@@ -2,24 +2,17 @@ using UnityEngine;
 
 public class DechetGenerator : MonoBehaviour
 {
-    public GameObject[] dechetPrefabs; // Liste de prefabs de déchets
-    public Transform spawnPoint;       // Position d’apparition
+    public GameObject[] dechetPrefabs; // Liste des déchets à générer
+    public Transform spawnPoint;       // Point d’apparition
 
-    private float spawnDelay = 0.1f;   // Délai fixe : 0.5 seconde
-    private float timer;
-
-    void Start()
-    {
-        timer = spawnDelay;
-    }
+    private GameObject currentDechet;  // Référence au déchet actuel
 
     void Update()
     {
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
+        // Si aucun déchet en scène, en générer un nouveau
+        if (currentDechet == null)
         {
             SpawnRandomDechet();
-            timer = spawnDelay;
         }
     }
 
@@ -30,6 +23,6 @@ public class DechetGenerator : MonoBehaviour
         int index = Random.Range(0, dechetPrefabs.Length);
         GameObject prefab = dechetPrefabs[index];
 
-        Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
+        currentDechet = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
     }
 }

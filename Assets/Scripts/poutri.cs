@@ -1,21 +1,33 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class poutri : MonoBehaviour
 {
-    public string acceptedTag;              // Tag accepté : "Verre", "Alimentaire", "Emballage"
+    public string acceptedTag;
     public static int score = 0;
+    private static int nbObjetsTries = 0; // Compteur global de tri correct
 
-    public Renderer boutonRenderer;         // Renderer du bouton à colorer
-    public Material materialCorrect;        // Matériau vert
-    public Material materialIncorrect;      // Matériau rouge
+    public Renderer boutonRenderer;
+    public Material materialCorrect;
+    public Material materialIncorrect;
+    private Material originalMaterial;
 
-    private Material originalMaterial;      // Matériau initial du bouton
+    public GameObject texteCorrect;
+    public GameObject texteIncorrect;
+
+    public AudioSource audioSource;
+    public AudioClip sonCorrect;
+    public AudioClip sonIncorrect;
+    public AudioClip sonFin; // Son à jouer quand les 10 objets sont triés
 
     void Start()
     {
         if (boutonRenderer != null)
             originalMaterial = boutonRenderer.material;
+
+        if (texteCorrect != null) texteCorrect.SetActive(false);
+        if (texteIncorrect != null) texteIncorrect.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,12 +40,27 @@ public class poutri : MonoBehaviour
             {
                 score += 1;
                 StartCoroutine(FlashButtonMaterial(materialCorrect));
+                StartCoroutine(ShowText(texteCorrect));
+                PlaySound(sonCorrect);
+
                 Destroy(other.gameObject);
+
             }
             else
             {
                 score -= 1;
                 StartCoroutine(FlashButtonMaterial(materialIncorrect));
+                StartCoroutine(ShowText(texteIncorrect));
+                PlaySound(sonIncorrect);
+
+                Destroy(other.gameObject);
+
+            }
+
+            nbObjetsTries += 1;
+            if (nbObjetsTries >= 10)
+            {
+                StartCoroutine(ChangementDeScene());
             }
         }
     }
@@ -43,8 +70,34 @@ public class poutri : MonoBehaviour
         if (boutonRenderer != null && tempMaterial != null)
         {
             boutonRenderer.material = tempMaterial;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
             boutonRenderer.material = originalMaterial;
         }
+    }
+
+    private IEnumerator ShowText(GameObject textObj)
+    {
+        if (textObj != null)
+        {
+            textObj.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            textObj.SetActive(false);
+        }
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
+    private IEnumerator ChangementDeScene()
+    {
+        GameManager.Instance.EnregistrerScore(score);
+        PlaySound(sonFin);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("end");
     }
 }
