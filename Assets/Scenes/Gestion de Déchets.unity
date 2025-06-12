@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Emballages
+  m_text: Emballage
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -470,6 +470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poubelle marron
       objectReference: {fileID: 0}
+    - target: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+      propertyPath: m_TagString
+      value: Alimentaire
+      objectReference: {fileID: 0}
     - target: {fileID: 4966230742975207303, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -513,7 +517,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1355772410}
   m_SourcePrefab: {fileID: 100100000, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
 --- !u!1 &425881170
 GameObject:
@@ -717,6 +724,24 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &430821681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+  m_PrefabInstance: {fileID: 1205727115}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &430821682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430821681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c2a61c34ea79440ab5d6e241faee68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceptedTag: Emballage
 --- !u!1 &550856209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,6 +1496,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &913999561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+  m_PrefabInstance: {fileID: 1621632345}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &913999562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913999561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c2a61c34ea79440ab5d6e241faee68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceptedTag: Verre
 --- !u!1 &1135792411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,6 +1661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poubelle jaune
       objectReference: {fileID: 0}
+    - target: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+      propertyPath: m_TagString
+      value: Emballage
+      objectReference: {fileID: 0}
     - target: {fileID: 2582601296255028750, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1681,7 +1728,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 430821682}
   m_SourcePrefab: {fileID: 100100000, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
 --- !u!1 &1211975750
 GameObject:
@@ -2389,6 +2439,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1355772409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+  m_PrefabInstance: {fileID: 367225865}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1355772410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355772409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c2a61c34ea79440ab5d6e241faee68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceptedTag: Alimentaire
 --- !u!1001 &1404664482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2460,6 +2528,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455592870}
+  - component: {fileID: 1455592871}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -2482,6 +2551,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1545207602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1455592871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455592869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a789bc88be0a54eb0080e23adace26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dechetPrefabs:
+  - {fileID: 3531451972403077952, guid: 93bfb237b7746dc4da757e48e332b2a1, type: 3}
+  - {fileID: 6447113718056728708, guid: f62d91ab1b939374fb44e0e74b06df7f, type: 3}
+  - {fileID: 6035881644306034112, guid: 4f9cfea248f16c546b2f3f588224887d, type: 3}
+  - {fileID: 2651796058284458510, guid: 90f5bd76b6c24be43ac57251d54de117, type: 3}
+  spawnPoint: {fileID: 1455592870}
 --- !u!1 &1508852134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2685,8 +2772,8 @@ Transform:
   m_GameObject: {fileID: 1545207598}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.6, z: -3.43}
-  m_LocalScale: {x: 1, y: 0.8, z: 1}
+  m_LocalPosition: {x: 1.3, y: -0.6, z: -3.43}
+  m_LocalScale: {x: 1.5, y: 0.8, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1455592870}
@@ -2730,6 +2817,10 @@ PrefabInstance:
     - target: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
       propertyPath: m_Name
       value: Poubelle verte
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+      propertyPath: m_TagString
+      value: Verre
       objectReference: {fileID: 0}
     - target: {fileID: 2582601296255028750, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2794,7 +2885,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1460897821425553409, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 913999562}
   m_SourcePrefab: {fileID: 100100000, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
 --- !u!1001 &1669751527
 PrefabInstance:
