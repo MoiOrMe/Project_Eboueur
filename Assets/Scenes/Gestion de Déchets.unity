@@ -742,6 +742,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptedTag: Emballage
+  boutonRenderer: {fileID: 1249687679}
+  materialCorrect: {fileID: 2100000, guid: 81db50b6e40b29340a441e4db0607ccc, type: 2}
+  materialIncorrect: {fileID: 2100000, guid: 26b732a31a8290c4d8a09605a48d0dcc, type: 2}
+--- !u!23 &472347840 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6655629887483516229, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+  m_PrefabInstance: {fileID: 1621632345}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &550856209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,6 +1522,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptedTag: Verre
+  boutonRenderer: {fileID: 472347840}
+  materialCorrect: {fileID: 2100000, guid: 81db50b6e40b29340a441e4db0607ccc, type: 2}
+  materialIncorrect: {fileID: 2100000, guid: 26b732a31a8290c4d8a09605a48d0dcc, type: 2}
 --- !u!1 &1135792411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2393,6 +2404,11 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -6447266317303757838, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!23 &1249687679 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6655629887483516229, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+  m_PrefabInstance: {fileID: 1205727115}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1284329068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,6 +2473,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptedTag: Alimentaire
+  boutonRenderer: {fileID: 1521166088}
+  materialCorrect: {fileID: 2100000, guid: 81db50b6e40b29340a441e4db0607ccc, type: 2}
+  materialIncorrect: {fileID: 2100000, guid: 26b732a31a8290c4d8a09605a48d0dcc, type: 2}
 --- !u!1001 &1404664482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2673,6 +2692,11 @@ RectTransform:
   m_AnchoredPosition: {x: -2, y: -0.5}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!23 &1521166088 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6655629887483516229, guid: 45cb5491735c86f47938b364bea5a7ce, type: 3}
+  m_PrefabInstance: {fileID: 367225865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1545207598
 GameObject:
   m_ObjectHideFlags: 0
