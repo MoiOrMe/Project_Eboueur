@@ -50,7 +50,6 @@ public class poutri : MonoBehaviour
             }
             else
             {
-                score -= 1;
                 error += 1;
                 StartCoroutine(FlashButtonMaterial(materialIncorrect));
                 StartCoroutine(ShowText(texteIncorrect));
