@@ -1,12 +1,14 @@
+using System.Collections;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class poutri : MonoBehaviour
 {
     public string acceptedTag;
     public static int score = 0;
-    private static int nbObjetsTries = 0; // Compteur global de tri correct
+    public static int error = 0;
+    public static int nbObjetsTries = 0; // Compteur global de tri correct
 
     public Renderer boutonRenderer;
     public Material materialCorrect;
@@ -49,6 +51,7 @@ public class poutri : MonoBehaviour
             else
             {
                 score -= 1;
+                error += 1;
                 StartCoroutine(FlashButtonMaterial(materialIncorrect));
                 StartCoroutine(ShowText(texteIncorrect));
                 PlaySound(sonIncorrect);
@@ -95,7 +98,7 @@ public class poutri : MonoBehaviour
 
     private IEnumerator ChangementDeScene()
     {
-        GameManager.Instance.EnregistrerScore(score);
+        GameManager.Instance.EnregistrerScore(score, error);
         PlaySound(sonFin);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("end");
