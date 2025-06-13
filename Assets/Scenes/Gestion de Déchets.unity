@@ -1963,6 +1963,51 @@ MonoBehaviour:
   sonCorrect: {fileID: 8300000, guid: 287ca81d25d086a40b667eefbac6f692, type: 3}
   sonIncorrect: {fileID: 8300000, guid: 8ac0a6c0db7b86744b4d1dd3d3748dcb, type: 3}
   sonFin: {fileID: 8300000, guid: 47b4eae49ecb25e44a12ce6187b0700e, type: 3}
+--- !u!1 &1063780680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1063780682}
+  - component: {fileID: 1063780681}
+  m_Layer: 0
+  m_Name: AideVisuelleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1063780681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063780680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cf5ccd898edcc429c7880b43d742f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aideActive: 1
+--- !u!4 &1063780682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063780680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.568287, y: -0.89681476, z: 3.2103665}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1135792411
 GameObject:
   m_ObjectHideFlags: 0
@@ -4319,12 +4364,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 110290093695726414, guid: 76a69d90706333444921b8840779d030, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 110290093695726414, guid: 76a69d90706333444921b8840779d030, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1063780681}
     - target: {fileID: 110290093695726414, guid: 76a69d90706333444921b8840779d030, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleAideVisuelle
@@ -4456,3 +4501,4 @@ SceneRoots:
   - {fileID: 782283747}
   - {fileID: 594420633}
   - {fileID: 1462348458}
+  - {fileID: 1063780682}
