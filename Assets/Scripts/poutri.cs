@@ -61,8 +61,15 @@ public class poutri : MonoBehaviour
             }
 
             nbObjetsTries += 1;
+
+            if (nbObjetsTries == 0)
+            {
+                GameManager.Instance.StartTimer();
+            }
+
             if (nbObjetsTries >= 10)
             {
+                GameManager.Instance.StopTimer();
                 StartCoroutine(ChangementDeScene());
             }
         }

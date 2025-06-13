@@ -914,7 +914,7 @@ GameObject:
   - component: {fileID: 594420633}
   - component: {fileID: 594420632}
   m_Layer: 0
-  m_Name: SceneManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,9 +934,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreFinal: 0
   errorFinal: 0
+  timerFinal: 0
   scoreText: {fileID: 932994739709086}
   errorText: {fileID: 932994739709088}
   nbrItemText: {fileID: 932994739709087}
+  timeText: {fileID: 932994739709089}
 --- !u!4 &594420633
 Transform:
   m_ObjectHideFlags: 0
@@ -4104,6 +4106,17 @@ MonoBehaviour:
 --- !u!114 &932994739709088 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4294241056438556079, guid: 76a69d90706333444921b8840779d030, type: 3}
+  m_PrefabInstance: {fileID: 932994739709085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &932994739709089 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5725942907179017557, guid: 76a69d90706333444921b8840779d030, type: 3}
   m_PrefabInstance: {fileID: 932994739709085}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

@@ -5,6 +5,7 @@ public class AfficherScore : MonoBehaviour
 {
     public TextMeshProUGUI texteScore;
     public TextMeshProUGUI texteError;
+    public TextMeshProUGUI texteTemps;
 
 
     void Start()
@@ -18,6 +19,11 @@ public class AfficherScore : MonoBehaviour
         {
             int error = GameManager.Instance.errorFinal;
             texteError.text = "Errors final : " + error.ToString();
+        }
+        if (texteTemps != null)
+        {
+            float temps = GameManager.Instance.timerFinal;
+            texteTemps.text = "Temps total : " + temps.ToString("F2") + "s";
         }
     }
 }

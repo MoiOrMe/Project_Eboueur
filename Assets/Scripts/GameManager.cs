@@ -4,12 +4,18 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    private float timer;
+    private bool isTiming = false;
+
     public int scoreFinal;
     public int errorFinal;
+    public float timerFinal;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI errorText;
     public TextMeshProUGUI nbrItemText;
+    public TextMeshProUGUI timeText;
 
     void Update()
     {
@@ -24,6 +30,14 @@ public class GameManager : MonoBehaviour
         if (nbrItemText != null)
         {
             nbrItemText.text = "Item trié : " + poutri.nbObjetsTries;
+        }
+        if (isTiming)
+        {
+            timer += Time.deltaTime;
+            if (timeText != null)
+            {
+                timeText.text = "Temps : " + timer.ToString("F2") + "s";
+            }
         }
     }
 
@@ -44,5 +58,22 @@ public class GameManager : MonoBehaviour
     {
         scoreFinal = score;
         errorFinal = error;
+        GameManager.Instance.timerFinal = GameManager.Instance.GetFinalTime();
+    }
+
+    public float GetFinalTime()
+    {
+        return timer;
+    }
+
+    public void StartTimer()
+    {
+        timer = 0f;
+        isTiming = true;
+    }
+
+    public void StopTimer()
+    {
+        isTiming = false;
     }
 }
