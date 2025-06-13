@@ -76,4 +76,13 @@ public class GameManager : MonoBehaviour
     {
         isTiming = false;
     }
+
+    public void ReconnectUI()
+    {
+        scoreText = GameObject.Find("ScoreText")?.GetComponent<TextMeshProUGUI>();
+        errorText = GameObject.Find("ErrorText")?.GetComponent<TextMeshProUGUI>();
+        nbrItemText = GameObject.Find("NbrItemText")?.GetComponent<TextMeshProUGUI>();
+        timeText = GameObject.Find("TimeText")?.GetComponent<TextMeshProUGUI>();
+    }
+
 }
