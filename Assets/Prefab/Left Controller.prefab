@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8544016118238212008}
   - component: {fileID: 3462090238699700168}
   - component: {fileID: 5725942907179017557}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 168697624121907993}
   - component: {fileID: 1388543023617138884}
   - component: {fileID: 6253409746627182363}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 7893916317784645592}
   - component: {fileID: 647416182204955940}
   - component: {fileID: 7040603048224339098}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 6397062914820887281}
   - component: {fileID: 7987829991896282645}
   - component: {fileID: 2817739821766233469}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ResetButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1221,7 +1221,7 @@ GameObject:
   - component: {fileID: 8194275008172737394}
   - component: {fileID: 3764695242447292469}
   - component: {fileID: 4294241056438556079}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ErrorTexte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1355,7 +1355,7 @@ GameObject:
   - component: {fileID: 6309610435865376772}
   - component: {fileID: 1362968803890939357}
   - component: {fileID: 3888733799793744427}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NbrItemText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1490,7 +1490,7 @@ GameObject:
   - component: {fileID: 794555285882310251}
   - component: {fileID: 3193665614327055331}
   - component: {fileID: 2665510139215681147}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Interface Manette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
