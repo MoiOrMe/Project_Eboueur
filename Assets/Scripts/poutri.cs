@@ -106,7 +106,7 @@ public class poutri : MonoBehaviour
     {
         GameManager.Instance.EnregistrerScore(score, error);
         PlaySound(sonFin);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("end");
     }
 }
