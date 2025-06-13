@@ -19,8 +19,10 @@ public class AideVisuelleManager : MonoBehaviour
         }
     }
 
-    public void ToggleAideVisuelle()
+    public void ToggleAideVisuelle(bool isOn)
     {
-        aideActive = !aideActive;
+        Debug.Log("Toggle reçu : " + isOn);
+        aideActive = isOn;
     }
+
 }
