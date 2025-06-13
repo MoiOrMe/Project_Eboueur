@@ -62,7 +62,7 @@ public class poutri : MonoBehaviour
 
             nbObjetsTries += 1;
 
-            if (nbObjetsTries == 0)
+            if (nbObjetsTries == 1)
             {
                 GameManager.Instance.StartTimer();
             }
