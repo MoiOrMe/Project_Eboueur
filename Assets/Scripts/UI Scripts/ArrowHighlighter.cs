@@ -25,9 +25,6 @@ public class ArrowHighlighter : MonoBehaviour
 
         DisableAllArrows();
 
-        if (!AideVisuelleManager.Instance.aideActive)
-            return;
-
         switch (tag)
         {
             case "Emballage":
