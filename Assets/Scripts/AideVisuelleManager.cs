@@ -11,7 +11,7 @@ public class AideVisuelleManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optionnel si tu changes de scènes
+            DontDestroyOnLoad(gameObject);
         }
         else
         {

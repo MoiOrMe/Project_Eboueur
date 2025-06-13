@@ -2991,7 +2991,6 @@ GameObject:
   - component: {fileID: 1462348458}
   - component: {fileID: 1462348457}
   - component: {fileID: 1462348459}
-  - component: {fileID: 1462348460}
   m_Layer: 0
   m_Name: ManagerManager
   m_TagString: Untagged
@@ -3042,19 +3041,6 @@ MonoBehaviour:
   flecheEmballage: {fileID: 1616056759}
   flecheVerre: {fileID: 138262384}
   flecheAlimentaire: {fileID: 656824799}
---- !u!114 &1462348460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462348456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6cf5ccd898edcc429c7880b43d742f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aideActive: 1
 --- !u!1 &1508852134
 GameObject:
   m_ObjectHideFlags: 0
@@ -4338,7 +4324,7 @@ PrefabInstance:
     - target: {fileID: 110290093695726414, guid: 76a69d90706333444921b8840779d030, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1462348460}
+      objectReference: {fileID: 0}
     - target: {fileID: 110290093695726414, guid: 76a69d90706333444921b8840779d030, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleAideVisuelle
